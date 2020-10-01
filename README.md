@@ -1,5 +1,5 @@
-Crypto++: free C++ Class Library of Cryptographic Schemes
-Version 8.3 - TBD
+<strong>Crypto++: free C++ Class Library of Cryptographic Schemes</strong>
+<strong>Version 8.3 - TBD</strong>
 
 Crypto++ Library is a free C++ class library of cryptographic schemes.
 Currently the library contains the following algorithms:
@@ -53,7 +53,7 @@ algorithms retained for backwards  3.0, WAKE-OFB, DESX (DES-XEX3), RC2,
      compatibility and historical  SAFER, 3-WAY, GOST, SHARK, CAST-128, Square
                             value
 
-Other features include:
+<strong>Other features include:</strong>
 
   * pseudo random number generators (PRNG): ANSI X9.17 appendix C, RandomPool,
     DARN, VIA Padlock, RDRAND, RDSEED, NIST Hash and HMAC DRBGs
@@ -100,7 +100,7 @@ http://www.cryptopp.com the most up to date build instructions and porting notes
   * Sun Studio 12u1 - 12.6
   * IBM XL C/C++ 10.0 - 13.3
 
-*** Important Usage Notes ***
+<strong>*** Important Usage Notes ***</strong>
 
 1. If a constructor for A takes a pointer to an object B (except primitive
 types such as int and char), then A owns B and will delete B at A's
@@ -112,7 +112,7 @@ A no longer needs it.
 Crypto++ safely in a multithreaded application, but you must provide
 synchronization when multiple threads access a common Crypto++ object.
 
-*** MSVC-Specific Information ***
+<strong>*** MSVC-Specific Information ***</strong>
 
 To compile Crypto++ with MSVC, open "cryptest.sln" (for MSVC 2003 - 2015)
 and build one or more of the following projects:
@@ -144,7 +144,7 @@ In either case you should check the compiler options to
 make sure that the library and your application are using the same C++
 run-time libraries and calling conventions.
 
-*** DLL Memory Management ***
+<strong>*** DLL Memory Management ***</strong>
 
 Because it's possible for the Crypto++ DLL to delete objects allocated
 by the calling application, they must use the same C++ memory heap. Three
@@ -168,7 +168,7 @@ and "SetNewAndDeleteFromCryptoPP". If one of these functions is found,
 Crypto++ uses methods 1 or 2, respectively, by calling the function.
 Otherwise, method 3 is used.
 
-*** Linux and Unix-like Specific Information ***
+<strong>*** Linux and Unix-like Specific Information ***</strong>
 
 A makefile is included for you to compile Crypto++ with GCC and compatibles.
 Make sure you are using GNU Make and GNU ld. The make process will produce
@@ -203,7 +203,7 @@ The makefile links to the static version of the Crypto++ library to avoid binary
 planting and other LD_PRELOAD tricks. You should use the static version of the
 library in your programs to help avoid unwanted redirections.
 
-*** Side Channel Attacks ***
+<strong>*** Side Channel Attacks ***</strong>
 
 Crypto++ attempts to resist side channel attacks using various remediations.
 The remdiations are applied as a best effort but are probably incomplete. They
@@ -229,7 +229,7 @@ the GCC options to your CXXFLAGS when building the library.
 To help resist attacks you should disable hyperthreading on cpus. If you
 suspect or find an information leak then please report it.
 
-*** Documentation and Support ***
+<strong>*** Documentation and Support ***</strong>
 
 Crypto++ is documented through inline comments in header files, which are
 processed through Doxygen to produce an HTML reference manual. You can find
@@ -243,7 +243,7 @@ If you run into any problems, please try the Crypto++ mailing list.
 The subscription information and the list archive are available on
 http://www.cryptopp.com.
 
-*** Source Code and Contributing ***
+<strong>*** Source Code and Contributing ***</strong>
 
 The source code and its planned changes are available at the following locations.
 
@@ -291,7 +291,7 @@ Doxygen, and the online information provided in the wiki. The wiki is more verbo
 usually provides more contextual information than the API reference. Besides testing,
 documentation is one of the highest returns on investment.
 
-*** History ***
+<strong>*** History ***</strong>
 
 The items in this section comprise the most recent history. Please see History.txt
 for the record back to Crypto++ 1.0.
